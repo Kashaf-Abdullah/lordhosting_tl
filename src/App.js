@@ -1,24 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import MainPage from "./Pages/MainPage";
+import PageRevendeurWeb from "./Pages/PageRevendeurWeb";
+import PageServer from "./Pages/PageServer";
+import PageServiceCloud from "./Pages/PageServiceCloud";
+import PageServiceGame from "./Pages/PageServiceGame";
+import PageWebDomain from "./Pages/PageWebDomain";
 
+import { Routes, Route, BrowserRouter as Router } from "react-router-dom";
+import PageWindow from "./Pages/PageWindow";
+import PagePterodactyl from "./Pages/PagePterodactyl";
+import PageBrokeProtocol from "./Pages/PageBrokeProtocol";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Router>
+        <Routes>
+          <Route path="/" element={<MainPage></MainPage>} />
+          <Route path="/webdomain" element={<PageWebDomain />} />
+          <Route path="/servicecloud" element={<PageServiceCloud />} />
+          <Route path="/revendeurweb" element={<PageRevendeurWeb />} />
+          <Route path="/servicegame" element={<PageServiceGame />} />
+          <Route path="/server" element={<PageServer/>} />
+          <Route path="/window" element={<PageWindow/>} />
+          <Route path="/pterodactyl" element={<PagePterodactyl/>} />
+          <Route path="/broke-protocol" element={<PageBrokeProtocol/>} />
+        
+          </Routes>
+      </Router>
+    </>
   );
 }
 

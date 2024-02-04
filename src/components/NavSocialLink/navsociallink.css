@@ -1,0 +1,90 @@
+
+.nav-social-link {
+  background-color: var(--darkblue);
+  font-family: "Varela Round", sans-serif;
+}
+.nav-social-link a {
+  text-decoration: none;
+  color: white;
+}
+.navsociallink {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: var(--darkblue);
+  height: 2rem;
+}
+.left-sociallinks {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: var(--white);
+  /* margin-left:5px ; */
+  gap: 6px;
+  /* margin-left: 112px; */
+}
+.left-sociallinks a {
+  font-size: 12px;
+  
+}
+
+.left-sociallinks .email-icon {
+  margin-left: 24px;
+}
+
+
+.right-sociallinks {
+  display: flex;
+  flex-direction: row;
+  color: white;
+  align-items: center;
+  gap: 18px;
+  margin-right: 232px;
+}
+
+.right-sociallinks a {
+  color: var(--white);
+  font-size: 12px;
+}
+ .left-sociallinks .fa-phone{
+  font-size: 10px;
+  position: relative;
+  bottom: 0.5px;
+}
+.left-sociallinks .fa-envelope{
+  font-size:12px;
+}
+@media only screen and (max-width: 1003px) {
+  .right-sociallinks {
+    margin-right: 5px;
+    gap: 10px;
+  }
+  .left-sociallinks {
+    margin-left: 4px;
+  }
+ .left-sociallinks .email-icon {
+    margin-left: 16px;
+  }
+}
+@media only screen and (max-width: 461px) {
+  .right-sociallinks {
+    gap: 5.5px;
+  }
+.left-sociallinks .fa-phone{
+  font-size: 8.5px;
+}
+  .left-sociallinks a, .fa-envelope {
+    font-size: 10.5px;
+  }
+  .left-sociallinks {
+    gap: 4px;
+  }
+  .email-icon {
+    margin-left: 4px;
+  }
+}
+
+  .moving-text{
+    overflow: hidden;
+    color:white
+  }
